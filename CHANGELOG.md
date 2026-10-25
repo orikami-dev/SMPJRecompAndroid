@@ -2,6 +2,10 @@
 
 Studio : ORIKAMI.
 
+## 0.59
+
+- L'ATH affiche le pilote graphique utilisé et sa version (APK 0.59).
+
 ## 0.58
 
 - Vérifications dans les journaux (`[vérif]`, ligne `[santé]` toutes les 30 s, rapport de plantage complet) ; corrige un plantage sur une texture sans mémoire après des changements de plateau (APK 0.58).

@@ -40,6 +40,7 @@ Jamboree fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'
 
 | Version | Ce qu'elle a apporté |
 |---|---|
+| 0.59 | Le pilote graphique et sa version s'affichent en jeu. |
 | 0.58 | Vérifications et ligne de santé dans les journaux. |
 | 0.57 | Fin d'un plantage au chargement des plateaux. |
 | 0.52 | Chargements rapides, nouvelle manette tactile, bouton x2. |
