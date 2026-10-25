@@ -28,6 +28,14 @@ Jamboree fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'
 | 🧰 **Journal de bord** | Rapport de plantage, journal partageable et mail prêt après un incident. |
 | 📦 **Lancé par Masu** | [Masu](https://github.com/orikami-dev/masu) prépare le jeu (clés, dump, extraction) puis le lance. |
 
+## ✨ Points forts
+
+- 🚀 Chargements rapides : un test de 35 s est passé à 46 ms.
+- 🕹️ Même manette tactile sur les deux écrans du pliant, bouton x2 pour accélérer le jeu.
+- 📊 Compteur d'images par seconde discret, avec les températures.
+- 🛟 Après un plantage : un rapport complet, un journal et un mail prêt à envoyer.
+- 🔒 Aucun fichier du jeu ni aucune clé : tout reste sur ton appareil.
+
 ## ⭐ Mises à jour majeures
 
 | Version | Ce qu'elle a apporté |
@@ -39,6 +47,13 @@ Jamboree fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'
 | 0.33 | Le son arrive. |
 | 0.22 | Sélection des personnages atteinte. |
 | 0.15 | Écran titre et menu principal. |
+
+## 🛠️ Le dépôt
+
+| Fichier | Contenu |
+|---|---|
+| `docs/releases/` | Les notes de chaque version |
+| `CHANGELOG.md` | Le journal des versions |
 
 ## ⚖️ À savoir
 
