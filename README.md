@@ -15,7 +15,7 @@
 
 ## 🎮 Le projet
 
-Jamboree fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'est pas un émulateur généraliste : le code ARM64 du jeu s'exécute directement sur le processeur du téléphone, et seuls le système de la Switch et l'API graphique NVN sont remplacés par du code natif Android et Vulkan.
+Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'est pas un émulateur généraliste : le code ARM64 du jeu s'exécute directement sur le processeur du téléphone, et seuls le système de la Switch et l'API graphique NVN sont remplacés par du code natif Android et Vulkan.
 
 **Ce dépôt ne publie que les notes de version.** Il ne contient ni code, ni donnée du jeu, ni clé : il faut sa propre copie du jeu et ses propres clés, extraites de sa console.
 
