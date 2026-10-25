@@ -1,7 +1,7 @@
 <h1 align="center">Jamboree</h1>
 <p align="center"><b>Ouvre. Joue.</b><br>par ORIKAMI</p>
 
-<p align="center"><i>A native Android port of Super Mario Party Jamboree (Nintendo Switch). Bring your own legally dumped copy and keys. No game files, keys or source code are published here.</i></p>
+<p align="center"><i>A native Android port of Super Mario Party Jamboree (Nintendo Switch). Bring your own legally dumped copy and keys. No game files, keys or source code are published here. Runs with <a href="https://github.com/orikami-dev/masu">Masu</a>.</i></p>
 
 <p align="center">
   <a href="https://github.com/orikami-dev/SMPJRecompAndroid/releases/latest">⬇️ <b>Dernière version</b></a>
