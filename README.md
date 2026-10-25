@@ -1,4 +1,4 @@
-<h1 align="center">Jamboree</h1>
+<h1 align="center">SMPJRecompAndroid</h1>
 <p align="center">par ORIKAMI</p>
 
 <p align="center"><i>A native Android port of Super Mario Party Jamboree (Nintendo Switch). Bring your own legally dumped copy and keys. No game files, keys or source code are published here. Runs with <a href="https://github.com/orikami-dev/masu">Masu</a>.</i></p>
@@ -21,7 +21,7 @@ Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce 
 
 | | |
 |---|---|
-| 🎮 **Jamboree en natif** | Le code ARM64 du jeu tourne tel quel sur le téléphone, avec le son. |
+| 🎮 **Jeu en natif** | Le code ARM64 du jeu tourne tel quel sur le téléphone, avec le son. |
 | 🖼️ **NVN vers Vulkan** | Les shaders de la Switch sont traduits à l'avance. |
 | 🕹️ **Manettes** | Manettes physiques 1 à 4 et manette tactile aux couleurs de la fête. |
 | 📱 **Pensé pour le pli** | Paysage, plein écran sur l'écran externe comme sur l'écran intérieur d'un pliant. |
