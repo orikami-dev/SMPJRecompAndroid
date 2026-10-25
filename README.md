@@ -59,3 +59,5 @@ Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce 
 ## ⚖️ À savoir
 
 Usage personnel uniquement, avec une copie du jeu que vous possédez. Aucun fichier du jeu, aucune clé ni aucun code n'est publié dans ce dépôt.
+
+Non affilié à Nintendo. Les noms et marques cités appartiennent à leurs propriétaires.
