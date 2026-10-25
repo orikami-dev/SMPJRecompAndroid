@@ -1,0 +1,18 @@
+name: Garde-fou
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  donnees-interdites:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refuser clés et données du jeu
+        run: |
+          bad=$(git ls-files | grep -Ei '(^|/)(prod|title)\.keys$|\.(nsp|xci|nca|nso|nro|nsz|keys|jks|keystore|p12)$|(^|/)(romfs|exefs)(/|$)' || true)
+          if [ -n "$bad" ]; then
+            echo "Fichiers interdits :"; echo "$bad"; exit 1
+          fi

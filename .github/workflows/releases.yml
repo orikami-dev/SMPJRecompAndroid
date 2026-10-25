@@ -1,0 +1,32 @@
+# Publie une release « Jamboree <version> » (tag v<version>) pour chaque fichier docs/releases/<version>.md, sans aucun fichier joint.
+# Lancement : onglet Actions > « Publier les releases » > Run workflow. Réécrit aussi les notes des releases existantes.
+name: Publier les releases
+on:
+  workflow_dispatch:
+concurrency: releases
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Releases
+        run: |
+          set -euo pipefail
+          EXISTING="$(gh release list --limit 500 --json tagName --jq '.[].tagName')"
+          for f in $(ls docs/releases | sort -V); do
+            v="${f%.md}"
+            echo "$v" | grep -qE '^[0-9]+(\.[0-9]+)+$' || continue
+            if echo "$EXISTING" | grep -qx "v$v"; then
+              gh release edit "v$v" --title "Jamboree $v" --notes-file "docs/releases/$f" >/dev/null && echo "notes v$v à jour"
+            else
+              gh release create "v$v" --title "Jamboree $v" --notes-file "docs/releases/$f" --target main --latest=false && echo "v$v publiée"
+            fi
+          done
+          LATEST="$(ls docs/releases | sed 's/\.md$//' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -1)"
+          [ -n "$LATEST" ] && gh release edit "v$LATEST" --latest && echo "dernière : v$LATEST"
