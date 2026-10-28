@@ -2,6 +2,87 @@
 
 Studio : ORIKAMI.
 
+## 0.77 ⭐
+
+- Cases du plateau : les dessins indirects (enregistrements écrits par le GPU) sont maintenant exécutés.
+
+## 0.76
+
+- Passages à fond noir aux changements de scène corrigés : courte saccade à la place, le temps que les shaders se compilent.
+
+## 0.75
+
+- Plantage au lancement d'un mini-jeu corrigé (fonctions de base manquantes : atof, qsort, bsearch).
+
+## 0.74 ⭐
+
+- Personnages aplatis corrigés (lecture des matrices d'os).
+- Fin d'une fausse vérification « format de sommet inconnu ».
+
+## 0.73
+
+- LOG enrichi (attributs et flux de sommets de chaque dessin).
+
+## 0.72
+
+- Mémoire partagée avec le GPU : un mot réécrit par le jeu n'est plus écrasé par une ancienne relecture.
+- LOG enrichi.
+
+## 0.71
+
+- Plus de plantage quand l'appli passe en arrière-plan.
+- LOG enrichi.
+
+## 0.70 ⭐
+
+- Personnages, PNJ et Bowser en couleur (cache de shaders complété ; l'ancien cache est remplacé automatiquement).
+
+## 0.69
+
+- Gel au chargement du plateau corrigé : le rendu n'attend plus les shaders préparés.
+- Dernier shader non traduit corrigé (LEA).
+
+## 0.68
+
+- Blocage au lancement d'une partie corrigé.
+- Instruction ATOM des shaders de skinning ; rapport de blocage plus complet.
+
+## 0.67
+
+- Couleurs corrigées sur la place, la carte de l'île et le choix du mode (tables de couleurs 3D).
+
+## 0.66
+
+- Écran blanc au chargement d'une sauvegarde corrigé (compilation en arrière-plan).
+- Instruction VOTE traduite ; rapport de blocage dans le journal.
+
+## 0.65
+
+- Personnages enfin calculés (vertex shaders de calcul exécutés dans une passe dédiée).
+- Zones mémoire partagées qui se chevauchent fusionnées.
+
+## 0.64 ⭐
+
+- Personnages animés par la carte graphique enfin dessinés (transform feedback).
+- Image de débogage complète dans le journal.
+
+## 0.63
+
+- Personnages et objets animés par le GPU dessinés avec leurs vrais sommets (ils étaient étirés en triangles ou absents).
+
+## 0.62
+
+- Jusqu'à 64 textures par shader (personnages et rendu système).
+- Attributs indexés traduits.
+- Journal : nouvelles vérifications et ligne de statistiques des sommets toutes les 30 s.
+
+## 0.61
+
+- Personnages aplatis ou clignotants : listes de dessin stockées hors de la mémoire du jeu.
+- Dessins des programmes du cache à nouveau affichés (absents depuis la 0.58).
+- Fausses couleurs : entrées interpolées correctement à l'écran.
+- Rapport des capacités graphiques au démarrage ; cache de pipelines protégé quand le stockage est plein.
+
 ## 0.59
 
 Le pilote graphique s'affiche en jeu.

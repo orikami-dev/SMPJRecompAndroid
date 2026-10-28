@@ -38,6 +38,10 @@ Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce 
 
 | Version | Ce qu'elle a apporté |
 |---|---|
+| 0.77 | Les cases du plateau s'affichent (dessins indirects exécutés). |
+| 0.74 | Personnages aplatis corrigés. |
+| 0.70 | Personnages, PNJ et Bowser en couleur. |
+| 0.64 | Personnages animés par la carte graphique enfin dessinés. |
 | 0.59 | Le pilote graphique et sa version s'affichent en jeu. |
 | 0.58 | Vérifications et ligne de santé dans les journaux. |
 | 0.57 | Fin d'un plantage au chargement des plateaux. |
