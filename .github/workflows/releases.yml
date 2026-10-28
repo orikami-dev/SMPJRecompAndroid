@@ -21,11 +21,12 @@ jobs:
           EXISTING="$(gh release list --limit 500 --json tagName --jq '.[].tagName')"
           for f in $(ls docs/releases | sort -V); do
             v="${f%.md}"
+            T="SMPJRecompAndroid $v"; head -1 "docs/releases/$f" | grep -q '⭐' && T="$T ⭐"
             echo "$v" | grep -qE '^[0-9]+(\.[0-9]+)+$' || continue
             if echo "$EXISTING" | grep -qx "v$v"; then
-              gh release edit "v$v" --title "SMPJRecompAndroid $v" --notes-file "docs/releases/$f" >/dev/null && echo "notes v$v à jour"
+              gh release edit "v$v" --title "$T" --notes-file "docs/releases/$f" >/dev/null && echo "notes v$v à jour"
             else
-              gh release create "v$v" --title "SMPJRecompAndroid $v" --notes-file "docs/releases/$f" --target main --latest=false && echo "v$v publiée"
+              gh release create "v$v" --title "$T" --notes-file "docs/releases/$f" --target main --latest=false && echo "v$v publiée"
             fi
           done
           LATEST="$(ls docs/releases | sed 's/\.md$//' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -1)"
