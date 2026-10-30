@@ -1,4 +1,4 @@
-name: Garde-fou
+name: Guardrail
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  donnees-interdites:
+  forbidden-data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
