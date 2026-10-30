@@ -38,6 +38,7 @@ Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce 
 
 | Version | Ce qu'elle a apporté |
 |---|---|
+| 1.0.0 | Multijoueur local jusqu'à 4, nouvelle manette tactile, menu Paramètres, cast et DeX, démarrage rapide. |
 | 0.97 | Multijoueur local avec manettes physiques et nouvelle manette tactile. |
 | 0.95 | Bulles de dialogue des personnages affichées. |
 | 0.83 | Moins de chauffe et plus de fluidité. |

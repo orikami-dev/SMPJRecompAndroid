@@ -2,6 +2,17 @@
 
 Studio : ORIKAMI.
 
+## 1.0.0 ⭐
+
+- Multijoueur local : chaque manette branchée devient un joueur, jusqu'à 4. Dans le menu, on peut échanger les places des joueurs.
+- Nouvelle manette tactile, mi-Switch mi-GameCube. Elle s'adapte à la taille de l'écran, et tous ses boutons sont bien visibles.
+- Menu « Paramètres » à gauche, aux couleurs de Masu. Une poignée et une bulle permettent de l'ouvrir.
+- Cast et écran externe : un téléviseur (Smart View, Miracast) ou un écran branché reçoit l'image du jeu, et le téléphone sert de manette.
+- Samsung DeX : le jeu tourne en fenêtre sur le moniteur, et cette fenêtre suit sa taille.
+- Démarrage beaucoup plus rapide : les shaders déjà préparés sont réutilisés d'un lancement à l'autre.
+- Écran noir propre jusqu'au titre, sans clignotement.
+- Lancement par Masu : le jeu utilise sa propre copie si celle de Masu n'est pas en version 1.0.0.
+
 ## 0.99
 
 - Plus d'image fantôme de la place du village avant l'écran titre.
