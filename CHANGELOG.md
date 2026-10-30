@@ -2,6 +2,103 @@
 
 Studio : ORIKAMI.
 
+## 0.99
+
+- Plus d'image fantôme de la place du village avant l'écran titre.
+- Premier menu « Paramètres » : jeu, image, manette tactile, manettes, sauvegardes.
+- Les réglages changés dans le jeu reviennent dans Masu.
+
+## 0.98
+
+- Intro : retour direct à l'écran titre, sans fin d'intro impossible à passer.
+- Manette tactile : libellés, croix et boutons − et + mieux placés.
+
+## 0.97 ⭐
+
+- Multijoueur local avec manettes physiques, joueurs 1 à 4.
+- Nouvelle manette tactile aux couleurs GameCube, avec un stick caméra.
+- Réglages de la manette tactile (taille, opacité, vibration) choisis dans Masu.
+- Le jeu peut être lancé directement depuis Masu.
+- Rayures de l'eau de la Marina atténuées (essai).
+
+## 0.96
+
+- Son Bluetooth : plus de son haché ni ralenti.
+
+## 0.95 ⭐
+
+- Bulles de dialogue des personnages enfin affichées (Toad, Koopa…).
+
+## 0.94
+
+- Ombres : les dessins des ombres ne sont plus perdus pendant la préparation des shaders.
+
+## 0.93
+
+- Premiers correctifs pour les bulles de dialogue.
+
+## 0.92
+
+- Journaux partagés numérotés.
+
+## 0.91
+
+- Outils de diagnostic pour les bulles et les chargements.
+
+## 0.90
+
+- Cases éloignées du plateau affichées.
+
+## 0.89
+
+- Outils de diagnostic pour les cases du plateau.
+
+## 0.88
+
+- Grands modèles 3D de nouveau visibles (régression de la 0.87).
+- Plus de cases du plateau visibles en vue large.
+
+## 0.87
+
+- Essai pour les cases du plateau (retiré en 0.88).
+
+## 0.86
+
+- Outils de diagnostic pour les cases du plateau.
+
+## 0.85
+
+- Bulles de texte de fin de partie affichées.
+
+## 0.84
+
+- Correctif d'un plantage pendant les parties.
+
+## 0.83 ⭐
+
+- Moins de chauffe et plus de fluidité : beaucoup moins de copies de données à chaque image.
+
+## 0.82
+
+- Correctif des blocages et des plantages graphiques sur le plateau.
+
+## 0.81
+
+- Fin des fermetures du jeu par manque de mémoire après quelques minutes.
+
+## 0.80
+
+- Personnages et cases corrects dans tous les modes mémoire.
+- Journal plus complet en cas de souci graphique.
+
+## 0.79
+
+- Correctif de la régression de la 0.78 (personnages figés, cases disparues).
+
+## 0.78
+
+- Nouveau mode mémoire pour moins de copies. Il causait une régression, corrigée en 0.79 : préférer la 0.79.
+
 ## 0.77 ⭐
 
 - Cases du plateau : les dessins indirects (enregistrements écrits par le GPU) sont maintenant exécutés.

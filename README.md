@@ -38,6 +38,9 @@ Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce 
 
 | Version | Ce qu'elle a apporté |
 |---|---|
+| 0.97 | Multijoueur local avec manettes physiques et nouvelle manette tactile. |
+| 0.95 | Bulles de dialogue des personnages affichées. |
+| 0.83 | Moins de chauffe et plus de fluidité. |
 | 0.77 | Les cases du plateau s'affichent (dessins indirects exécutés). |
 | 0.74 | Personnages aplatis corrigés. |
 | 0.70 | Personnages, PNJ et Bowser en couleur. |
