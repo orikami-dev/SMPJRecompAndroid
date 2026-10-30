@@ -1,6 +1,6 @@
-# Publie une release « SMPJRecompAndroid <version> » (tag v<version>) pour chaque fichier docs/releases/<version>.md, sans aucun fichier joint.
-# Lancement : onglet Actions > « Publier les releases » > Run workflow. Réécrit aussi les notes des releases existantes.
-name: Publier les releases
+# Publishes a "SMPJRecompAndroid <version>" release (tag v<version>) for each docs/releases/<version>.md file, with no attached file.
+# Run: Actions tab > "Publish releases" > Run workflow. Also rewrites the notes of existing releases.
+name: Publish releases
 on:
   workflow_dispatch:
 concurrency: releases
@@ -24,10 +24,10 @@ jobs:
             T="SMPJRecompAndroid $v"; head -1 "docs/releases/$f" | grep -q '⭐' && T="$T ⭐"
             echo "$v" | grep -qE '^[0-9]+(\.[0-9]+)+$' || continue
             if echo "$EXISTING" | grep -qx "v$v"; then
-              gh release edit "v$v" --title "$T" --notes-file "docs/releases/$f" >/dev/null && echo "notes v$v à jour"
+              gh release edit "v$v" --title "$T" --notes-file "docs/releases/$f" >/dev/null && echo "notes v$v updated"
             else
-              gh release create "v$v" --title "$T" --notes-file "docs/releases/$f" --target main --latest=false && echo "v$v publiée"
+              gh release create "v$v" --title "$T" --notes-file "docs/releases/$f" --target main --latest=false && echo "v$v published"
             fi
           done
           LATEST="$(ls docs/releases | sed 's/\.md$//' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -1)"
-          [ -n "$LATEST" ] && gh release edit "v$LATEST" --latest && echo "dernière : v$LATEST"
+          [ -n "$LATEST" ] && gh release edit "v$LATEST" --latest && echo "latest: v$LATEST"

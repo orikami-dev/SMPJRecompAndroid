@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Refuser clés et données du jeu
+      - name: Refuse keys and game data
         run: |
           bad=$(git ls-files | grep -Ei '(^|/)(prod|title)\.keys$|\.(nsp|xci|nca|nso|nro|nsz|keys|jks|keystore|p12)$|(^|/)(romfs|exefs)(/|$)' || true)
           if [ -n "$bad" ]; then
-            echo "Fichiers interdits :"; echo "$bad"; exit 1
+            echo "Forbidden files:"; echo "$bad"; exit 1
           fi

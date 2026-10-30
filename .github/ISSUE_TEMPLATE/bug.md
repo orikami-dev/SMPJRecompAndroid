@@ -1,11 +1,11 @@
 ---
 name: Bug
-about: Un plantage ou un défaut d'affichage constaté sur l'appareil
+about: A crash or display defect noticed on the device
 labels: bug
 ---
 
-**Version de l'APK :**
+**APK version:**
 
-**Ce qui s'est passé :**
+**What happened:**
 
-**Rapport et journal :** joindre `rapport.txt` et `journal.txt` (dossier Téléchargements/Jamboree). Ne jamais joindre de fichier du jeu ni de clé.
+**Report and log:** attach `rapport.txt` and `journal.txt` (Downloads/Jamboree folder). Never attach a game file or a key.

@@ -1,69 +1,69 @@
 <h1 align="center">SMPJRecompAndroid</h1>
-<p align="center">par ORIKAMI</p>
+<p align="center">by ORIKAMI</p>
 
 <p align="center"><i>A native Android port of Super Mario Party Jamboree (Nintendo Switch). Bring your own legally dumped copy and keys. No game files, keys or source code are published here. Runs with <a href="https://github.com/orikami-dev/masu">Masu</a>.</i></p>
 
 <p align="center">
-  <a href="https://github.com/orikami-dev/SMPJRecompAndroid/releases">📦 Toutes les versions</a>
+  <a href="https://github.com/orikami-dev/SMPJRecompAndroid/releases">📦 All versions</a>
   ·
-  <a href="CHANGELOG.md">📝 Journal des versions</a>
+  <a href="CHANGELOG.md">📝 Changelog</a>
 </p>
 
 ---
 
-## 🎮 Le projet
+## 🎮 The project
 
-Ce portage fait tourner **Super Mario Party Jamboree** en natif sur Android. Ce n'est pas un émulateur généraliste : le code ARM64 du jeu s'exécute directement sur le processeur du téléphone, et seuls le système de la Switch et l'API graphique NVN sont remplacés par du code natif Android et Vulkan.
+This port runs **Super Mario Party Jamboree** natively on Android. It is not a general-purpose emulator: the game's ARM64 code runs directly on the phone's processor, and only the Switch's system and the NVN graphics API are replaced by native Android and Vulkan code.
 
-**Ce dépôt ne publie que les notes de version.** Il ne contient ni code, ni donnée du jeu, ni clé : il faut sa propre copie du jeu et ses propres clés, extraites de sa console.
+**This repository only publishes release notes.** It contains no code, no game data and no keys: you need your own copy of the game and your own keys, extracted from your console.
 
 | | |
 |---|---|
-| 🎮 **Jeu en natif** | Le code ARM64 du jeu tourne tel quel sur le téléphone, avec le son. |
-| 🖼️ **NVN vers Vulkan** | Les shaders de la Switch sont traduits à l'avance. |
-| 🕹️ **Manettes** | Manettes physiques 1 à 4 et manette tactile aux couleurs de la fête. |
-| 📱 **Pensé pour le pli** | Paysage, plein écran sur l'écran externe comme sur l'écran intérieur d'un pliant. |
-| 🧰 **Journal de bord** | Rapport de plantage, journal partageable et mail prêt après un incident. |
-| 📦 **Lancé par Masu** | [Masu](https://github.com/orikami-dev/masu) prépare le jeu (clés, dump, extraction) puis le lance. |
+| 🎮 **Native game** | The game's ARM64 code runs as is on the phone, with sound. |
+| 🖼️ **NVN to Vulkan** | The Switch's shaders are translated in advance. |
+| 🕹️ **Controllers** | Physical controllers 1 to 4 and a touch controller in party colors. |
+| 📱 **Made for foldables** | Landscape, full screen on the external display as on a foldable's inner screen. |
+| 🧰 **Logbook** | Crash report, shareable log and a ready-to-send e-mail after an incident. |
+| 📦 **Launched by Masu** | [Masu](https://github.com/orikami-dev/masu) prepares the game (keys, dump, extraction) then launches it. |
 
-## ✨ Points forts
+## ✨ Highlights
 
-- 🚀 Chargements rapides : un test de 35 s est passé à 46 ms.
-- 🕹️ Même manette tactile sur les deux écrans du pliant, bouton x2 pour accélérer le jeu.
-- 📊 Compteur d'images par seconde discret, avec les températures.
-- 🛟 Après un plantage : un rapport complet, un journal et un mail prêt à envoyer.
-- 🔒 Aucun fichier du jeu ni aucune clé : tout reste sur ton appareil.
+- 🚀 Fast loading: a 35 s test went down to 46 ms.
+- 🕹️ Same touch controller on both foldable screens, x2 button to speed up the game.
+- 📊 Discreet frames-per-second counter, with temperatures.
+- 🛟 After a crash: a full report, a log and a ready-to-send e-mail.
+- 🔒 No game file and no key: everything stays on your device.
 
-## ⭐ Mises à jour majeures
+## ⭐ Major updates
 
-| Version | Ce qu'elle a apporté |
+| Version | What it brought |
 |---|---|
-| 1.0.0 | Multijoueur local jusqu'à 4, nouvelle manette tactile, menu Paramètres, cast et DeX, démarrage rapide. |
-| 0.97 | Multijoueur local avec manettes physiques et nouvelle manette tactile. |
-| 0.95 | Bulles de dialogue des personnages affichées. |
-| 0.83 | Moins de chauffe et plus de fluidité. |
-| 0.77 | Les cases du plateau s'affichent (dessins indirects exécutés). |
-| 0.74 | Personnages aplatis corrigés. |
-| 0.70 | Personnages, PNJ et Bowser en couleur. |
-| 0.64 | Personnages animés par la carte graphique enfin dessinés. |
-| 0.59 | Le pilote graphique et sa version s'affichent en jeu. |
-| 0.58 | Vérifications et ligne de santé dans les journaux. |
-| 0.57 | Fin d'un plantage au chargement des plateaux. |
-| 0.52 | Chargements rapides, nouvelle manette tactile, bouton x2. |
-| 0.49 | Les décors 3D apparaissent. |
-| 0.33 | Le son arrive. |
-| 0.22 | Sélection des personnages atteinte. |
-| 0.15 | Écran titre et menu principal. |
+| 1.0.0 | Local multiplayer up to 4, new touch controller, Settings menu, cast and DeX, fast startup. |
+| 0.97 | Local multiplayer with physical controllers and a new touch controller. |
+| 0.95 | Characters' dialogue bubbles displayed. |
+| 0.83 | Less heat and smoother play. |
+| 0.77 | Board spaces displayed (indirect draws executed). |
+| 0.74 | Flattened characters fixed. |
+| 0.70 | Characters, NPCs and Bowser in color. |
+| 0.64 | Characters animated by the graphics card finally drawn. |
+| 0.59 | The graphics driver and its version are shown in game. |
+| 0.58 | Checks and a health line in the logs. |
+| 0.57 | End of a crash when loading boards. |
+| 0.52 | Fast loading, new touch controller, x2 button. |
+| 0.49 | 3D scenery appears. |
+| 0.33 | Sound arrives. |
+| 0.22 | Character selection reached. |
+| 0.15 | Title screen and main menu. |
 
-## 🛠️ Le dépôt
+## 🛠️ The repository
 
-| Fichier | Contenu |
+| File | Content |
 |---|---|
-| `docs/releases/` | Les notes de chaque version |
-| `CHANGELOG.md` | Le journal des versions |
+| `docs/releases/` | The notes of each version |
+| `CHANGELOG.md` | The changelog |
 
-## ⚖️ À savoir
+## ⚖️ Good to know
 
-Usage personnel uniquement, avec une copie du jeu que vous possédez. Aucun fichier du jeu, aucune clé ni aucun code n'est publié dans ce dépôt.
+Personal use only, with a copy of the game that you own. No game file, key or code is published in this repository.
 
-Non affilié à Nintendo. Les noms et marques cités appartiennent à leurs propriétaires.
+Not affiliated with Nintendo. The names and trademarks mentioned belong to their owners.
